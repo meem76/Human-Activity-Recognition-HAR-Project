@@ -1,0 +1,46 @@
+# Human Activity Recognition (HAR) Project 🏃‍♂️📊
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-yellowgreen)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-2.0%2B-orange)](https://xgboost.readthedocs.io/)
+[![CatBoost](https://img.shields.io/badge/CatBoost-1.2%2B-purple)](https://catboost.ai/)
+[![SHAP](https://img.shields.io/badge/SHAP-0.45%2B-red)](https://shap.readthedocs.io/)
+
+Human Activity Recognition using wearable sensor data with **Explainable AI (SHAP)** and **advanced model optimization**.
+
+## 📋 Dataset Overview
+
+Sensor data for **4 human activities**:
+| Activity | Label |
+|----------|-------|
+| Stand    | 0     |
+| Walk     | 1     |
+| Sit      | 2     |
+| Lay      | 3     |
+
+## 🛠️ Project Workflow
+
+
+### 1. Data Preprocessing
+- ✅ Encoded labels: `Stand(0), Walk(1), Sit(2), Lay(3)`
+- ✅ 80/20 train-test split
+- ✅ Target: encoded class column
+
+### 2. Baseline Model Testing
+Basic model to benchmark performance:
+
+### 3. Feature Importance (SHAP + XGBoost)
+- **Selected top 10 features** for advanced modeling
+- ![SHAP Beeswarm](shap_beeswarm.png)
+
+### 4. Advanced Model Training & Optimization
+**10-fold Cross-Validation** + **Grid/Random Search**
+
+| Model | Algorithm |
+|-------|-----------|
+| **SVM** | Support Vector Machine |
+| **XGBoost** | Gradient Boosting |
+| **CatBoost** | Categorical Boosting |
+| **AdaBoost** | Adaptive Boosting |
+
+### 5. Results
